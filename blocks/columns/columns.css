@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  background: #f8f8f8;
 }
 
 .columns img {
@@ -16,7 +17,7 @@
 }
 
 .columns > div > .columns-img-col img {
-  display: block;
+  display: flex;
 }
 
 @media (width >= 900px) {

@@ -12,10 +12,10 @@
 
 :root {
   /* colors */
-  --background-color: white;
+  --background-color: cyan;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: magenta;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
@@ -254,4 +254,24 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+/***** eds banner  ****/
+.eds-banner-container
+{
+  background-color: #ddd;
+  padding: 40px 0;
+}
+/*** Separate Section ****/
+.section-separated-container
+{
+  padding: 40px 0;
+  background-color: lightgrey;
+}
+/***** custom button with icon *****/
+.direction-button a.button
+{
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  display: inline-flex;
 }
