@@ -14,6 +14,8 @@ export default async function decorate(block) {
             li.textContent = user.name; // Adjust according to your JSON structure
             ul.appendChild(li);
         });
+        block.textContent = '';
+        block.append(ul);
     } catch (error) {
         console.error('Fetch error:', error);
     }
