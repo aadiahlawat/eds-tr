@@ -11,6 +11,7 @@ export default async function decorate(block) {
         // Render the list users
         data.data.forEach(user => {
             const li = document.createElement('li');
+            console.log('User Data: '+user);
             li.textContent = user.name; // Adjust according to your JSON structure
             ul.appendChild(li);
         });
