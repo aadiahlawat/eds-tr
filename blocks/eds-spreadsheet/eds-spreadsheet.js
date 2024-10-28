@@ -9,11 +9,11 @@ export default async function decorate(block) {
         const data = await response.json();
         console.log('This is spreadsheet data: '+data);
         // Render the list users
-       /* data.forEach(user => {
+        data.forEach(user => {
             const li = document.createElement('li');
             li.textContent = user.name; // Adjust according to your JSON structure
             userList.appendChild(li);
-        });*/
+        });
     } catch (error) {
         console.error('Fetch error:', error);
     }
