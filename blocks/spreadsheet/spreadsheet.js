@@ -6,10 +6,10 @@ export default async function decorate(block) {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const users = await response.json().data;
+        const users = await response.json();
         console.log('This is spreadsheet data: '+users);
         // Render the list users
-        users.forEach(user => {
+        users.data.forEach(user => {
             const li = document.createElement('li');
             li.textContent = user.name; // Adjust according to your JSON structure
             ul.appendChild(li);
