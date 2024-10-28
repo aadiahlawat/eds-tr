@@ -12,7 +12,6 @@ const defaultPlaceholder = '';
 
 const  foo  = placeholders.clickHereForMore;
 
-console.log('Fetched placeholders:', placeholders);
   /* change to ul, li */
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
