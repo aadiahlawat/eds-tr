@@ -11,6 +11,7 @@ export default function decorate(block) {
 const defaultPlaceholder = '';
 
 const  foo  = placeholders.clickHereForMore;
+
 console.log('Fetched placeholders:', placeholders);
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -20,8 +21,7 @@ console.log('Fetched placeholders:', placeholders);
     [...li.children].forEach((div) => {
       const link = div.querySelector('a'); // Assuming the link is an <a> element inside the card
       if (link) {
-        link.textContent=foo || defaultPlaceholder;
-          
+        link.textContent= foo || defaultPlaceholder;
       }
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
       else div.className = 'cards-card-body';
