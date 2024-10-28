@@ -2,7 +2,7 @@ export default async function decorate(block) {
     const userList = block.querySelector('#user-list');
 
     try {
-        const response = await fetch('https://develop--eds-tr--aadiahlawat.aem.live/eds-spreadsheet.json'); // Replace with your JSON URL
+        const response = await fetch('https://develop--eds-tr--aadiahlawat.aem.page/eds-spreadsheet.json'); // Replace with your JSON URL
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
