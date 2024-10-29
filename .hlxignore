@@ -5,4 +5,4 @@ LICENSE
 package.json
 package-lock.json
 test/*
-style-bcc.css
+styles/style-bcc.css
